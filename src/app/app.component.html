@@ -1,6 +1,14 @@
 <h1>
   {{title}}
+</h1>
 
+<div class="searchContainer">
   <input name="title" #searchTerm>
   <button (click)="performSearch(searchTerm)">Search</button>
-</h1>
+</div>
+
+  <br>
+
+<div *ngFor="let g of retrievedItems">
+  <img src="{{g.images.original.url}}">
+<div>
