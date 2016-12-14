@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome to GiphySearch!';
-  performSearch(): void {
-    console.log("Button click is working!");
+  performSearch(searchTerm: HTMLInputElement): void {
+    console.log(`User entered: ${searchTerm.value}`);
   }
 }

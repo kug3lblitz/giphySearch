@@ -1,6 +1,6 @@
 <h1>
   {{title}}
 
-  <input name="search">
-  <button (click)="performSearch()">Search</button>
+  <input name="title" #searchTerm>
+  <button (click)="performSearch(searchTerm)">Search</button>
 </h1>
