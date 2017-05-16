@@ -7,6 +7,7 @@ import { Http, Response } from '@angular/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Welcome to GiphySearch!';
   link = 'http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=';
